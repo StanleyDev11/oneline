@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ma Galerie de Films</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+    }
+
+    .films-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .film {
+      background-color: #2c2c2c;
+      border-radius: 10px;
+      width: 200px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .film img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .film-title {
+      margin: 10px 0;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .watch-btn {
+      background-color: #e50914;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .watch-btn:hover {
+      background-color: #ff1e25;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Films disponibles</h1>
+
+  <div class="films-container">
+    <!-- Film 1 -->
+    <div class="film">
+      <img src="cc.webp" alt="Film 1">
+      <div class="film-title">Les Chambres Rouge</div>
+      <a href="#" class="watch-btn">Regarder</a>
+    </div>
+
+    <!-- Film 2 -->
+    <div class="film">
+      <img src="f.webp" alt="Film 2">
+      <div class="film-title">Furiosa</div>
+      <a href="#" class="watch-btn">Regarder</a>
+    </div>
+
+    <!-- Film 3 -->
+    <div class="film">
+      <img src="hi.webp" alt="Film 3">
+      <div class="film-title">L'histoire de Souleman</div>
+      <a href="#" class="watch-btn">Regarder</a>
+    </div>
+  </div>
+
+</body>
+</html>
