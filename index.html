@@ -3,93 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Ma Galerie de Films</title>
-  <style>
-    body {
-      background-color: #1e1e1e;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-    }
-
-    /* Navbar */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #111;
-      padding: 10px 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.7);
-    }
-
-    .navbar .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .navbar img {
-      height: 40px;
-    }
-
-    .navbar .nav-links a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-    }
-
-    .navbar .nav-links a:hover {
-      color: #e50914;
-    }
-
-    h1 {
-      text-align: center;
-      margin: 40px 0 20px;
-    }
-
-    .films-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .film {
-      background-color: #2c2c2c;
-      border-radius: 10px;
-      width: 200px;
-      padding: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      text-align: center;
-    }
-
-    .film img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    .film-title {
-      margin: 10px 0;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    .watch-btn {
-      background-color: #e50914;
-      color: white;
-      border: none;
-      padding: 8px 12px;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .watch-btn:hover {
-      background-color: #ff1e25;
-    }
-  </style>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
@@ -108,80 +22,93 @@
 
   <h1>Films disponibles</h1>
 
+  <!-- BARRE DE RECHERCHE -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Rechercher un film...">
+  </div>
+
+  <!-- CONTENEUR DES FILMS -->
   <div class="films-container">
-    <!-- Film 1 -->
     <div class="film">
       <img src="images/cc.webp" alt="Film 1">
       <div class="film-title">Les Chambres Rouge</div>
       <a href="streaming.html?film=les_chambres_rouge" class="watch-btn">Regarder</a>
     </div>
 
-    <!-- Film 2 -->
     <div class="film">
       <img src="images/f.webp" alt="Film 2">
       <div class="film-title">Furiosa</div>
       <a href="streaming.html?film=furiosa" class="watch-btn">Regarder</a>
     </div>
 
-    <!-- Film 3 -->
     <div class="film">
       <img src="images/hi.webp" alt="Film 3">
       <div class="film-title">L'histoire de Souleman</div>
       <a href="streaming.html?film=souleman" class="watch-btn">Regarder</a>
     </div>
 
-    <!-- Film 4 -->
     <div class="film">
       <img src="images/si.webp" alt="Film 4">
       <div class="film-title">Planète des Singes</div>
       <a href="streaming.html?film=planete_des_singes" class="watch-btn">Regarder</a>
     </div>
 
-    <!-- Film 5 -->
     <div class="film">
       <img src="images/la.jpg" alt="Film 5">
       <div class="film-title">Land Of Bad</div>
       <a href="streaming.html?film=land_of_bad" class="watch-btn">Regarder</a>
     </div>
-  </div>
 
-  <div class="films-container">
-    <!-- Film 1 -->
     <div class="film">
-      <img src="images/us.webp" alt="Film 1">
+      <img src="images/us.webp" alt="Film 6">
       <div class="film-title">Us</div>
-      <a href="streaming.html?film=les_chambres_rouge" class="watch-btn">Regarder</a>
+      <a href="streaming.html?film=us" class="watch-btn">Regarder</a>
     </div>
 
-    <!-- Film 2 -->
     <div class="film">
-      <img src="images/wak.jpeg" alt="Film 2">
+      <img src="images/wak.jpeg" alt="Film 7">
       <div class="film-title">Wakanda</div>
-      <a href="streaming.html?film=furiosa" class="watch-btn">Regarder</a>
+      <a href="streaming.html?film=wakanda" class="watch-btn">Regarder</a>
     </div>
 
-    <!-- Film 3 -->
     <div class="film">
-      <img src="images/babylon.webp" alt="Film 3">
+      <img src="images/babylon.webp" alt="Film 8">
       <div class="film-title">Babylon</div>
-      <a href="streaming.html?film=souleman" class="watch-btn">Regarder</a>
+      <a href="streaming.html?film=babylon" class="watch-btn">Regarder</a>
     </div>
 
-    <!-- Film 4 -->
     <div class="film">
-      <img src="images/bad_boys_ride_or_die.webp" alt="Film 4">
+      <img src="images/bad_boys_ride_or_die.webp" alt="Film 9">
       <div class="film-title">Bad Boys</div>
-      <a href="streaming.html?film=planete_des_singes" class="watch-btn">Regarder</a>
+      <a href="streaming.html?film=bad_boys" class="watch-btn">Regarder</a>
     </div>
 
-    <!-- Film 5 -->
     <div class="film">
-      <img src="images/god.jpg" alt="Film 5">
-      <div class="film-title">Seigneur Des anneaux</div>
-      <a href="streaming.html?film=land_of_bad" class="watch-btn">Regarder</a>
+      <img src="images/god.jpg" alt="Film 10">
+      <div class="film-title">Seigneur Des Anneaux</div>
+      <a href="streaming.html?film=seigneur_des_anneaux" class="watch-btn">Regarder</a>
     </div>
   </div>
 
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Live-Hero-Streaming. Tous droits réservés.</p>
+    <p><a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+  </footer>
+
+  <!-- SCRIPT DE RECHERCHE -->
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const films = document.querySelectorAll('.film');
+
+    searchInput.addEventListener('input', function () {
+      const query = this.value.toLowerCase();
+      films.forEach(film => {
+        const title = film.querySelector('.film-title').textContent.toLowerCase();
+        film.style.display = title.includes(query) ? 'block' : 'none';
+      });
+    });
+  </script>
 
 </body>
 </html>
